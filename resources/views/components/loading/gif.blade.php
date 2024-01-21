@@ -1,0 +1,1 @@
+<img src="/imgs/loading.gif" style="height: 30px;">

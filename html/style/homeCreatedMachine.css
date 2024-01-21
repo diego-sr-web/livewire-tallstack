@@ -1,0 +1,328 @@
+.main-home-with-machine-created {
+  background-color: #fff;
+  width: 100%;
+  height: fit-content;
+  padding: 16px;
+  border-radius: 8px;
+}
+.machines-created-title {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  /* Escala Cinza/900 */
+
+  color: #14181b;
+}
+.machines-created-text {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  /* Escala Cinza/300 */
+
+  color: #575c60;
+  margin-top: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ebf1f6;
+}
+.card-render-wrapper {
+  margin-top: 16px;
+}
+div#card-render {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.cardMachine {
+  max-width: 186px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  justify-content: center;
+  display: flex;
+  order: 1;
+}
+.cardMachine p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  /* Escala Cinza/300 */
+
+  color: #575c60;
+  margin-bottom: 8px;
+  order: 1;
+}
+#card-render > .cardMachine > img {
+  width: 186px;
+  height: 86px;
+  object-fit: cover;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  order: 2;
+}
+.views-like-and-settings {
+  order: 3;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+  position: relative;
+}
+.views-card,
+.like-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.view-card-image {
+  width: 16px;
+  height: 16px;
+  border: none;
+  object-fit: none;
+}
+.view-card-qtd,
+.like-card-qtd {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  /* Escala Cinza/300 */
+
+  color: #575c60;
+}
+img.settings-card-image {
+  position: absolute;
+  right: 0;
+}
+.machine-board {
+  margin: 5px 0 0 5px;
+  width: 100%;
+  height: fit-content;
+  padding: 16px;
+  border-radius: 8px;
+}
+.machine-board-header {
+  background-color: #fff;
+  width: 100%;
+  height: fit-content;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.machine-board-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.machine-icon-qtd {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.qtd-machines {
+  display: flex;
+  flex-direction: column;
+}
+.search-and-add-machine {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+.search-input-wrapper {
+  padding: 16px;
+  height: 56px;
+  border-right: 1px solid #ededed;
+  display: flex;
+  align-items: center;
+}
+.button-create2 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+#search-machine {
+  width: 161px;
+  height: 40px;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #ededed;
+  outline: 0;
+}
+#search-machine::placeholder {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  /* Escala Cinza/300 */
+
+  color: #a4a4a4;
+}
+.machine-board {
+  display: none;
+}
+.close-machine-home {
+  display: none;
+}
+.board-machine-open {
+  display: block !important;
+}
+#machine-counter {
+  font-family: "Cabinet Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  /* Cores Padrão/Preto */
+
+  color: #313131;
+}
+.machine-name-indicator {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  color: #636363;
+}
+.inside-button-create-machine {
+  order: 9999;
+  width: 186px;
+  height: 164px;
+  background: rgba(31, 142, 245, 0.08);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  text-align: center;
+
+  /* Secundária/200 */
+
+  color: #006acc;
+  cursor: pointer;
+}
+.inside-button-create-machine:hover {
+  background: rgba(31, 142, 245, 0.568);
+}
+.modal-create-done {
+  position: absolute;
+  display: block;
+}
+.modal-create-done-active {
+  position: absolute;
+  display: none;
+}
+.modalSuccessDivBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.successDiv {
+  position: absolute;
+  display: flex;
+  width: 511px;
+  height: 328px;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+  z-index: 50;
+}
+.successDivTitle {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  text-align: center;
+}
+.successDivText {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  text-align: center;
+
+  /* Gray Scale/400 */
+
+  color: #4c4e61;
+}
+.successDivImg {
+  margin-bottom: 32px;
+}
+.successDivButton {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  /* Escala Cinza/300 */
+
+  color: #575c60;
+  margin-top: 44px;
+}
+.successDivBgRemove {
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+}
+.close-createMachine-img2 {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  cursor: pointer;
+}

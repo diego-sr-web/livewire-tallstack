@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./style/import.css" />
+  </head>
+  <body>
+    <section class="home">
+      <header class="header-home">
+        <div class="logo-breadcrumb">
+          <div class="logo">
+            <div class="logo-image"></div>
+          </div>
+          <div class="breadcrumb">
+            <ul class="breadcrumb-list">
+              <li class="breadcrumb-item">
+                <a href="/home.html" class="breadcrumb-link">Início </a>
+              </li>
+              <li class="breadcrumb-item">
+                <img src="./imgs/arrow.svg" alt="" />
+              </li>
+              <li class="breadcrumb-item">
+                <a href="/home.html" class="breadcrumb-link">Máquinas </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="user-menu">
+          <div class="notifications icon">
+            <img src="./imgs/bell.svg" alt="" />
+          </div>
+          <div class="search icon">
+            <img src="./imgs/search.svg" alt="" />
+          </div>
+          <div class="user-profile">
+            <div class="user-img">
+              <img class="image-profile" src="./imgs/user.png" alt="" />
+            </div>
+            <span class="user-name">Username</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-home-wrapper">
+        <aside class="side-bar">
+          <div class="side-bar-icon">
+            <img src="./imgs/maquina.svg" alt="" class="icon-maquinas" />
+            <span class="icon-description">Máquinas</span>
+          </div>
+
+          <div class="side-bar-icon">
+            <img src="./imgs/user.svg" alt="" class="icon-maquinas" />
+            <span class="icon-description">Máquinas</span>
+          </div>
+        </aside>
+        <div class="main-home-content">
+          <div class="home-content">
+            <img src="./imgs/image-content.png" alt="" class="image-maquinas" />
+
+            <p class="content-maquinas-text1">
+              Você ainda não possuí máquinas criadas
+            </p>
+            <p class="content-maquinas-text2">
+              Crie a sua primeira audiência clicando no botão abaixo
+            </p>
+            <div id="open-create-modal" class="button-create">
+              CRIAR MÁQUINA
+            </div>
+          </div>
+        </div>
+
+        <div class="machine-board">
+          <header class="machine-board-header">
+            <div class="machine-icon-qtd">
+              <img src="./imgs/machine-icon.svg" alt="" class="machine-icon" />
+              <div class="qtd-machines">
+                <span id="machine-counter">0</span>
+                <span class="machine-name-indicator">Máquinas</span>
+              </div>
+            </div>
+
+            <div class="search-and-add-machine">
+              <div class="search-input-wrapper">
+                <input
+                  placeholder="Pesquisar nome da máquina..."
+                  type="text"
+                  name=""
+                  id="search-machine"
+                />
+              </div>
+              <div
+                id="open-create-modal-2"
+                class="button-create button-create2"
+              >
+                Adicionar Máquina
+              </div>
+            </div>
+          </header>
+          <div class="main-home-with-machine-created">
+            <p class="machines-created-title">Minhas máquinas</p>
+            <p class="machines-created-text">
+              Gerencie todas suas máquinas criadas em um só lugar.
+            </p>
+            <div class="card-render-wrapper">
+              <div id="card-render">
+                <div
+                  id="open-create-modal-3"
+                  class="inside-button-create-machine"
+                >
+                  <img src="./imgs/create-machine-icon.svg" alt="" />
+                  <span>Adicionar Máquina</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <section class="home home-with-created-machine"></section>
+
+    <section id="createMachineModal" class="modal-create-wrapper">
+      <div class="modal-create">
+        <div class="close-createMachine">
+          <img src="./imgs/close.svg" alt="" class="close-createMachine-img" />
+        </div>
+        <p class="modal-create-title">Nova máquina de vendas</p>
+        <p class="modal-create-text">
+          Você pode criar uma nova máquina de vendas preenchendo corretamente os
+          dados abaixo
+        </p>
+        <form action="" class="create-form">
+          <input
+            type="text"
+            name="machine-name"
+            placeholder="Nome da máquina"
+            id="machine-name"
+            class="create-input-name"
+            required
+          />
+
+          <span class="input-file-title">Imagem da capa</span>
+
+          <div class="drop-zone-area">
+            <div class="drop-zone">
+              <span class="drop-zone-prompt">Clique ou arraste a imagem</span>
+              <input
+                type="file"
+                name="file"
+                id=""
+                required
+                class="drop-zone--input"
+              />
+            </div>
+            <p class="drop-zone-text">
+              A dimensão recomendada é de <strong>1600 x 838</strong> (mesma
+              proporção do formato utilizado nas páginas de evento no Facebook).
+              Formato <strong>JPEG, GIF ou PNG</strong> de no máximo
+              <strong>2MB.</strong> Imagens com dimensões diferentes serão
+              redimensionadas.
+            </p>
+          </div>
+
+          <button
+            type="submit"
+            id="submit-btn"
+            class="button-create button-modal"
+          >
+            CRIAR MÁQUINA
+          </button>
+        </form>
+      </div>
+
+      <div class="background-modal"></div>
+    </section>
+
+    <script src="./script/main.js"></script>
+  </body>
+</html>

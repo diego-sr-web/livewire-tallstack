@@ -1,0 +1,10 @@
+@import "./style/home.css";
+@import "./style/homeCreatedMachine.css";
+@import "./style/loginScreen.css";
+@import "./style/import.css";
+@import "./style/modalCreate.css";
+@import "./style/maquinas.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

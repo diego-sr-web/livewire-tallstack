@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/import.css" />
+    <title>Máquina de vendas</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/cabinet-grotesk"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Login screen -->
+    <section class="login-screen">
+      <div class="container">
+        <div class="login-element">
+          <p class="login-title">Boas vindas ao Máquina de vendas</p>
+          <p class="login-text">
+            Antes de entrar em nossa plataforma, gostaria de solicitar que faço
+            o login, com email cadastrado
+          </p>
+
+          <form class="login-form">
+            <label class="label-login" for="email">Email*</label>
+            <input
+              placeholder="Digite aqui seu email cadastrado"
+              class="login-input"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <label class="label-login" for="password">Senha</label>
+
+            <input
+              placeholder="Digite aqui sua senha"
+              class="login-input"
+              type="password"
+              name="password"
+              id="password"
+            />
+
+            <div class="conect-or-reset">
+              <div class="conect">
+                <div class="check-box-login">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <span>Manter Conectado</span>
+              </div>
+
+              <a href="/" class="forget-password">Esqueceu a senha?</a>
+            </div>
+
+            <button class="login-button">CONECTAR A PLATAFORMA</button>
+          </form>
+          <a class="create-account" href="/">
+            Não possui acesso ao produto? Clique aqui e saiba mais
+          </a>
+        </div>
+
+        <div class="login-image"></div>
+      </div>
+    </section>
+    <!-- Login screen -->
+  </body>
+</html>

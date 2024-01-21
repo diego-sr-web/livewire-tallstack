@@ -1,0 +1,62 @@
+# docker-compose
+
+version: "3.8"
+
+services:
+  machine.test:
+    container_name: machine-app
+    build:
+      args:
+          user: jaime
+          uid: 1000
+      context: ./
+      dockerfile: Dockerfile        
+    image: jaimevalasek/machine
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www/
+    networks: 
+      - docker-machine
+    depends_on:      
+      - mysql
+  
+  # nginx
+  nginx:
+      container_name: machine-nginx
+      image: nginx:alpine
+      restart: unless-stopped
+      ports: 
+          - "8998:80"
+      volumes: 
+          - ./:/var/www
+          - ./docker/nginx/:/etc/nginx/conf.d/
+      networks: 
+          - docker-machine
+
+  # db mysql
+  mysql:
+      container_name: machine-mysql
+      image: mysql:5.7.39
+      #restart: unless-stopped
+      environment: 
+          MYSQL_DATABASE: 'machine'
+          MYSQL_ROOT_PASSWORD: '123456'
+          MYSQL_PASSWORD: '123456'
+          MYSQL_ROOT_HOST: "%"
+          MYSQL_USER: 'machine'
+      volumes: 
+        - ./.docker/mysql/dbdata:/var/lib/mysql
+      ports: 
+        - "3311:3306"
+      networks: 
+        - docker-machine
+  # redis
+  redis:
+      container_name: machine-redis
+      image: redis:latest
+      networks: 
+          - docker-machine
+networks:
+    docker-machine:
+        driver: bridge
